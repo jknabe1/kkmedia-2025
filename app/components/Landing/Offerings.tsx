@@ -1,10 +1,11 @@
 import React from 'react'
+import "@/app/globals.css"
 
 const Offerings = () => {
   return (
     <div>
-        <div className="content-block-container bg-yellow py-24 dark:text-black light mb-5xl">
-          <div className="block-container flex flex-col gap-16 md:gap-36">
+        <div className="w-full bg-yellow py-24 dark:text-black light mb-5xl">
+          <div className="m-auto flex flex-col gap-16 md:gap-36">
             <div className="flex flex-col lg:flex-row gap-4">
               <div className="basis-1/2">
                 <h2 className="heading-2">Som digital byrå kan vi hjälpa er att nå era mål</h2>

@@ -2,7 +2,6 @@ import type { Config } from "tailwindcss";
 import typography from "@tailwindcss/typography";
 
 export default {
-    darkMode: ["class"],
     content: ["./app/**/*.{ts,tsx}", "./sanity/**/*.{ts,tsx}"],
   theme: {
 
@@ -71,19 +70,6 @@ export default {
   				'800': '#653818',
   				'900': '#3a2415',
   				'950': '#251a13'
-  			},
-  			yellow: {
-  				'50': '#fefae1',
-  				'100': '#fcf3bb',
-  				'200': '#f9e994',
-  				'300': '#f7d455',
-  				'400': '#f9bc15',
-  				'500': '#d28a04',
-  				'600': '#965908',
-  				'700': '#653a0b',
-  				'800': '#3b220c',
-  				'900': '#271a11',
-  				'950': '#181410'
   			},
   			green: {
   				'50': '#e7f9ed',
