@@ -1,26 +1,55 @@
 @import "tailwindcss";
 
+
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --foreground-rgb: 255, 255, 255;
+  
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+  --x-spacing: 1.25rem;
+  --gutter: 1.25rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root {
+      --header-height: 77px;
+      --x-spacing: 3rem;
+      --gutter: 1.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (min-width: 1280px) {
+  .imagine-grid p {
+      font-size: 8rem;
+      line-height: 1;
   }
 }
+@media (min-width: 1024px) {
+  .imagine-grid p {
+      font-size: 6rem;
+      line-height: 1;
+  }
+}
+@media (min-width: 768px) {
+  .imagine-grid p {
+      font-size: 4.5rem;
+      line-height: 1;
+  }
+}
+.imagine-grid p {
+  line-height: 2.5rem;
+  font-weight: 700;
+}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  body {
+    color: rgb(var(--foreground-rgb));
+    background: rgb(var(--background-start-rgb));
+  }
+
+
+  p {
+    font-family: var(--font-geist-mono);
+    font-weight: 300;
+    opacity: 0.8;
+  }
 }
